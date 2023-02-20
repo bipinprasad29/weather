@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(31, 33, 34);
+}
+
+.head {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.container {
+  margin: auto;
+  width: 800px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(6, 4, 17, 0.3);
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.inputbox {
+  width: 600px;
+  height: auto;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.inputbox #serchfield {
+  width: 80%;
+  height: 50px;
+  left: 0;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  border-radius: 4px;
+}
+.inputbox #icons {
+  position: absolute;
+  right: 44px;
+  width: 18%;
+  height: 50px;
+  background-color: rgb(4, 66, 66);
+  border-radius: 0 5px 5px 0;
+  font-size: 30px;
+  color: #ffff;
+  text-align: center;
+}
+.inputbox #icons:hover {
+  color: rgb(3, 36, 49);
+  cursor: pointer;
+}
+
+#location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+#location h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+#country {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+#location::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: rgb(59, 59, 59);
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+}
+#temp {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  font-weight: 200;
+  text-align: center;
+}
+#desc {
+  color: rgb(99, 88, 88);
+}
+
+#desc1 {
+  color: rgb(182, 177, 177);
+  
+}
+
+#time,
+#date {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  margin: 5px 0 5px;
+  font-weight: 200;
+  border: 1px solid rgb(87, 28, 28);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide{
+  display: none;
+}
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  font-size: 18px;
+  margin: 10px;
+  font-weight: 300;
+}
+button:hover {
+  background-color: rgb(3, 36, 49);
+  color: #fff;
+  cursor: pointer;
+}
+.otherData {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  color: #fff;
+}
+.border{
+  border: 1px solid rgb(87, 28, 28);
+  padding: 5px;
+  border-radius: 5px;
+}
+.rise{
+  color: rgb(211, 191, 9);
+  font-size: 12px;
+  opacity: 0.7;
+}
+.set{
+  color: rgb(68, 25, 14);
+  font-size: 12px;
+}
+@media (max-width: 800px){
+  .container {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+  .head{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .inputbox{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .inputbox #serchfield{
+    min-width: 280px;
+    font-size: 24px;
+    border-radius: 4px 4px 0 0;
+  }
+  .inputbox #icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    margin: 0;
+    width: 80%;
+    font-size: 24px;
+    min-width: 280px;
+    position: relative;
+    border-radius: 0 0 4px 4px;
+    padding: 0 10px;
+  }
+  #location h1 ,#country,#temp {
+    font-size: 24px;
+  }
+  #temp{
+    margin-bottom: 10px;
+  }
+  #location::after{
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  #desc{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .otherData{
+    flex-wrap: wrap;
+    width: 90%;
+    font-size: 16px;
+  }
+  button{
+    bottom: 0;
+  }
+  .btn-container{
+    flex-wrap: wrap;
+  }
+    
+}
